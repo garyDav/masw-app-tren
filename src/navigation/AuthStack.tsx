@@ -36,8 +36,17 @@ export type AuthStackParamList = {
   Home: undefined;
   OriginLine: undefined;
   OriginRedLineStations: undefined;
+  OriginYellowLineStations: undefined;
+  OriginGreenLineStations: undefined;
   DestinationLine: undefined;
   DestinationRedLineStations: undefined;
+  DestinationYellowLineStations: undefined;
+  DestinationGreenLineStations: undefined;
+  QuantityCategory: undefined;
+  MethodPayments: undefined;
+  QrPaymentTicket: undefined;
+  SuccessfulTicket: undefined;
+  WrongProcess: undefined;
 };
 
 const Stack = createStackNavigator<AuthStackParamList>();
@@ -53,8 +62,17 @@ const AuthStack = () => {
       <Stack.Screen name="PasswordVerification" component={PasswordVerificationScreen} />
       <Stack.Screen name="OriginLine" component={OriginLine} />
       <Stack.Screen name="OriginRedLineStations" component={OriginRedLineStations} />
+      <Stack.Screen name="OriginYellowLineStations" component={OriginYellowLineStations} />
+      <Stack.Screen name="OriginGreenLineStations" component={OriginGreenLineStations} />
       <Stack.Screen name="DestinationLine" component={DestinationLine} />
       <Stack.Screen name="DestinationRedLineStations" component={DestinationRedLineStations} />
+      <Stack.Screen name="DestinationYellowLineStations" component={DestinationYellowLineStations} />
+      <Stack.Screen name="DestinationGreenLineStations" component={DestinationGreenLineStations} />
+      <Stack.Screen name="QuantityCategory" component={QuantityCategory} />
+      <Stack.Screen name="MethodPayments" component={MethodPayments} />
+      <Stack.Screen name="QrPaymentTicket" component={QrPaymentTicket} />
+      <Stack.Screen name="SuccessfulTicket" component={SuccessfulTicket} />
+      <Stack.Screen name="WrongProcess" component={WrongProcess} />
     </Stack.Navigator>
   );
 };
